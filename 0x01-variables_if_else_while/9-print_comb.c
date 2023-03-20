@@ -1,24 +1,23 @@
 #include <stdio.h>
 
 /**
- * main - two possibilities of numbers
+ * main - possible combinations of single digits
  *
- * Return: wehn succesful, 0
+ * Return: 0 when successful
  */
 int main(void)
 {
 	int n;
 
 	for (n = 0 ; n < 10 ; n++)
-	{	
-		if (n == 9)
-			putchar(n + '0');
-		else
+	{
+		putchar(n + '0');
+		if (n != 9)
 		{
-			putchar(n + '0');
 			putchar(',');
 			putchar(' ');
 		}
 	}
+	putchar('\n');
 	return (0);
 }
