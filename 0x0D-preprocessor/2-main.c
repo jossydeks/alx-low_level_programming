@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include "2-main.c"
+#include "2-main.c"
 
 /**
  * main - prints the name of the file
